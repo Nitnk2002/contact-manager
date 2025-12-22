@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Connect</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="login-card">
+            
+            <div class="brand-header">
+                <div class="brand-logo">
+                    <i class="fa-solid fa-address-book"></i>
+                </div>
+                <h2>Connect.</h2>
+            </div>
+            
+            <div class="header-text">
+                <h1>Welcome back</h1>
+                <p>Please enter your details to sign in.</p>
+            </div>
+            <div id="error-msg" style="display:none; color: #721c24; background-color: #f8d7da; border: 1px solid #f5c6cb; padding: 10px; border-radius: 5px; margin-bottom: 15px;">
+            Invalid Email or Password
+            </div>
+            <form action="LoginServlet" method="POST">
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="password" name="password" placeholder="••••••••" required>
+                        <i class="fa-regular fa-eye toggle-password"></i>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <label class="checkbox-container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        Remember for 30 days
+                    </label>
+                    <a href="#" class="forgot-link">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="btn-submit">Sign in</button>
+
+                <button type="button" class="btn-google">
+                    <img src="img/google.png" alt="Google">
+                    Sign in with Google
+                </button>
+            </form>
+
+            <p class="bottom-text">
+                Don't have an account? <a href="register.html">Sign up</a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+    // Check if URL has ?error=true
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has('error')) {
+        document.getElementById('error-msg').style.display = 'block';
+    }
+</script>
+</body>
+</html>

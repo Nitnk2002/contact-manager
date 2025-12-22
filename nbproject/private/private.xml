@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/Java%20Swing/ContactManager/web/Settings.jsp</file>
+            <file>file:/D:/Java%20Swing/ContactManager/src/java/model/UserModel.java</file>
+            <file>file:/D:/Java%20Swing/ContactManager/src/java/controller/AddContactServlet.java</file>
+            <file>file:/D:/Java%20Swing/ContactManager/src/java/controller/DeleteContactServlet.java</file>
+            <file>file:/D:/Java%20Swing/ContactManager/src/java/model/ContactModel.java</file>
+            <file>file:/D:/Java%20Swing/ContactManager/src/java/controller/UpdateContactServlet.java</file>
+            <file>file:/D:/Java%20Swing/ContactManager/src/java/controller/LogoutServlet.java</file>
+            <file>file:/D:/Java%20Swing/ContactManager/src/java/controller/DeleteAccountServlet.java</file>
+            <file>file:/D:/Java%20Swing/ContactManager/web/login.html</file>
+            <file>file:/D:/Java%20Swing/ContactManager/web/Dashboard.jsp</file>
+            <file>file:/D:/Java%20Swing/ContactManager/web/register.html</file>
+            <file>file:/D:/Java%20Swing/ContactManager/src/java/controller/LoginServlet.java</file>
+            <file>file:/D:/Java%20Swing/ContactManager/src/java/controller/RegisterServlet.java</file>
+            <file>file:/D:/Java%20Swing/ContactManager/src/java/controller/UpdateProfileServlet.java</file>
+        </group>
+    </open-files>
+</project-private>

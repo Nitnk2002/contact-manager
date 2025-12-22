@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account | Connect</title>
+    <link rel="stylesheet" href="register.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="register-card">
+            
+            <div class="brand-header">
+                <div class="brand-logo">
+                    <i class="fa-solid fa-address-book"></i>
+                </div>
+                <h2>Connect.</h2>
+            </div>
+            
+            <div class="header-text">
+                <h1>Create an account</h1>
+                <p>Start managing your contacts efficiently today.</p>
+            </div>
+
+            <form action="RegisterServlet" method="POST">
+                
+                <div class="input-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="e.g. John Doe" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="name@company.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="password" placeholder="Create a password" required>
+                    </div>
+                    <p class="helper-text">Must be at least 8 characters.</p>
+                </div>
+
+                <div class="input-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="confirm-password" name="password" placeholder="Confirm your password" required>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <label class="checkbox-container">
+                        <input type="checkbox" required>
+                        <span class="checkmark"></span>
+                        I agree to the <a href="#" class="link">Terms</a> and <a href="#" class="link">Privacy Policy</a>
+                    </label>
+                </div>
+
+                <button type="submit" class="btn-submit">Create Account</button>
+
+                <div class="divider">
+                    <span>Or sign up with</span>
+                </div>
+
+                <button type="button" class="btn-google">
+                    <img src="img/google.png" alt="Google">
+                    Google
+                </button>
+            </form>
+
+            <p class="bottom-text">
+                Already have an account? <a href="login.html">Log in</a>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
